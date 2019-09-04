@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="个人简历">
+    <meta name="keywords" content="简历" />
+    <title>蒋勇的个人简历</title>
+    <link rel="shortcut icon" href="./src/images/user.jpg">
+    <link rel="stylesheet" href="./src/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/demo.css">
+    <link rel="stylesheet" href="./src/css/slider.css">
+</head>
+
+<body id="body">
+    <!-- 第一屏 -->
+    <section class="section">
+        <nav class="navbar navbar-default my-nav ">
+            <div class="navbar-header">
+                <div class="navbar-fixed-top">
+                    <button type="button" class="navbar-toggle collapsed " id="navBtn">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <a class="navbar-brand my-font" href="#">
+                    <span class="glyphicon glyphicon-qrcode"></span>&nbsp;个人简历
+                </a>
+            </div>
+            <div class="collapse navbar-collapse  navbar-fixed-top">
+                <ul class="nav navbar-nav navbar-right" id="navbar">
+                    <li class="text-center"><a class="my-font" href="#basicInfo" id="_basicInfo">基本资料</a></li>
+                    <li class="text-center"><a class="my-font" href="#experience" id="_experience">做过项目</a></li>
+                    <li class="text-center"><a class="my-font" href="#technology" id="_technology">专业技能</a></li>
+                    <li class="text-center"><a class="my-font" href="#askMyself" id="_askMyself">告诫自己</a></li>
+                </ul>
+            </div>
+            <ul class="clickBtnShow hidden" id="btnBavbar">
+                <li class="text-center"><a class="my-font" href="#basicInfo" id="_basicInfo">基本资料</a></li>
+                <li class="text-center"><a class="my-font" href="#experience" id="_experience">做过项目</a></li>
+                <li class="text-center"><a class="my-font" href="#technology" id="_technology">专业技能</a></li>
+                <li class="text-center"><a class="my-font" href="#askMyself" id="_askMyself">告诫自己</a></li>
+            </ul>
+        </nav>
+
+        <header class="intro">
+            <div class="introInner my-text">
+                <h1>座右铭：</h1>
+                <h3>自强不息，敢于拼搏，做最自信的自己</h3>
+                <a href="#basicInfo" id="_basicInfoBtn"><button class="introBtn"></button></a>
+            </div>
+        </header>
+    </section>
+    <!-- 基本资料 -->
+    <section class="section flex" id="basicInfo">
+        <h1 class="title">
+            <span>基本</span>资料
+        </h1>
+        <div class="BSInfo">
+            <div class="BSInfo-left">
+                <div>
+                    <span class="glyphicon glyphicon-user my-icon" data-id="myBSInfo" id="myBSInfoBtn"></span>
+                    <h4>个人信息</h4>
+                    <p><span>姓名：蒋勇&nbsp</span><span>&nbsp性别：男</span></p>
+                    <p><span>年龄：25</span>
+                        <p>籍贯：江苏南京</p>
+                    </p>
+                </div>
+                <div>
+                    <span class="glyphicon glyphicon-bookmark my-icon" data-id="myIntroduce" id="myIntroduceBtn"></span>
+                    <h4>自我评价</h4>
+                    <p><span>特长：<p>善于人际交流，责任感强</p></span></p>
+                    <p><span>爱好：游戏，读书</span></p>
+                </div>
+
+                <div>
+                    <span class="glyphicon glyphicon-envelope my-icon" data-id="myCaller" id="myCallerBtn"></span>
+                    <h4>联系方式</h4>
+                    <p><span>QQ：1973772964</span></p>
+                    <p><span>邮箱：1973772964@qq.com</span></p>
+                </div>
+            </div>
+            <div class="myBSInfo container-fluid" id="myBSInfo">
+                <h3>详细信息</h3>
+                <img class="avatar" src="./src/images/user.jpg" alt="帅气的勇哥">
+                <span class="codeName">YongGCode</span>
+                <div class="row">
+                    <div class="col-md-1 text-center">姓名：</div>
+                    <div class="col-md-1">蒋勇</div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-2 text-right">兴趣：</div>
+                    <div class="col-md-4">游戏，读书，听音乐</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 text-center">性别：</div>
+                    <div class="col-md-1">男</div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-2 text-right">专业技能：</div>
+                    <div class="col-md-4">HTML5/CSS3/Javascript/JQuery/Bootstrap/ES6/gulp/微信小程序/vue</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 text-center">学历：</div>
+                    <div class="col-md-1">大专</div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-2 text-right">项目经历：</div>
+                    <div class="col-md-4">贪吃蛇/仿写京东首页/实现QQmusic功能/学生教务系统/微信杂志小程序</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 text-center">经验：</div>
+                    <div class="col-md-1">一年</div>
+
+                </div>
+
+            </div>
+            <div class="myIntroduce container-fluid hidden" id="myIntroduce">
+                <h3>个人经历</h3>
+                <div>
+                    <p>2013年-2016年就读于南京工业职业技术学院自动化技术专业。</p>
+                    <p>2016-2019期间在省然气工作。18年开始学习前端知识，准备往前端方向发展</p>
+                </div>
+                <h3 class="my-marginTop">自我评价</h3>
+                <div>
+                    <p>喜欢挑战，积极进取，对于技术上不断精进，不断变强是我的追求</p>
+                    <p>对人对事认真负责，严格要求自己，不断完善自我</p>
+                    <p>为人诚实，有良好的心理素质和抗压能力，待人真诚热情</p>
+                </div>
+            </div>
+            <div class="myCaller container-fluid hidden" id="myCaller">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="icon-box">
+                            <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+                        </div>
+                        我的QQ邮箱
+                    </div>
+                    <div class="col-md-6">1973772964@qq.com</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="icon-box">
+                            <a class="GitHub-link" href="https://github.com/"><span
+                                    class="glyphicon glyphicon-cloud"></span></a>
+                        </div>
+                        我的GitHub
+                    </div>
+                    <div class="col-md-6"><a href="https://github.com/yonggeCode">https://github.com/yonggeCode</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="icon-box">
+                            <a href="https://www.cnblogs.com/yongG"><span class="glyphicon glyphicon-book"></span></a>
+                        </div>
+
+                        我的博客园博客
+                    </div>
+                    <div class="col-md-6"><a href="https://www.cnblogs.com/yongG">https://www.cnblogs.com/yongG</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="myBSInfo container-fluid showIn580">
+            <div class="row">
+                <img class="avatar" src="./src/images/user.jpg" alt="帅气的勇哥">
+                <span class="codeName">YongGCode</span>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 text-center">姓名：</div>
+                <div class="col-xs-6">蒋勇</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 text-center">性别：</div>
+                <div class="col-xs-6">男</div>
+
+            </div>
+            <div class="row">
+                <div class="col-xs-6 text-center">专业技能：</div>
+                <div class="col-xs-6">HTML5/CSS3/Javascript/JQuery/Bootstrap/ES6/gulp/微信小程序/vue</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 text-center">项目经历：</div>
+                <div class="col-xs-6">贪吃蛇/仿写京东首页/实现QQmusic功能/学生教务系统/微信杂志小程序</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 text-center">QQ邮箱:</div>
+                <div class="col-xs-6">1973772964@qq.com</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 text-center">博客园博客:</div>
+                <div class="col-xs-6"><a href="https://www.cnblogs.com/yongG">https://www.cnblogs.com/yongG</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- 项目介绍 -->
+    <section class="section flex" id="experience">
+        <h1 class="title">
+            <span>项目</span>经验
+        </h1>
+        <div class="wrapper" id="wrap">
+            <img src="./src/images/example/photo.JPG" title="所用技术：html/css3/JQuery">
+            <img src="./src/images/example/students.JPG" title="所用技术：html5/css3/JQuery/ECharts">
+            <img src="./src/images/example/snack.JPG" title="所用技术：原生/设计模式：单例模式/工厂模式/发布订阅模式/链表">
+            <img src="./src/images/example/QQmusic.JPG" title="所用技术：html5/css3/Zepto/gulp/webpack">
+            <img src="./src/images/example/wx.jpg" title="所用技术：原生微信小程序框架">
+        </div>
+    </section>
+
+    <section class="section flex" id="technology">
+        <h1 class="title">
+            <span>专业</span>技能
+        </h1>
+        <div class="container-fluid technologyShow">
+            <div class="technologyImg">
+                <img src="./src/images/computer.png" alt="">
+            </div>
+            <div class="technologyInfo">
+                <div class="technologyInfoBox">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    <h3>前端基础</h3>
+                    <p>熟悉Html/Css/JavaScript，基础扎实,能熟练的使用Html5/Css3/ES6完成日常开发任务。对JavaScript有一定自己的见解。能熟练使用git进行代码的上传和拉取，熟悉github社区。了解一些设计模式的思想和实现
+                    </p>
+                </div>
+                <div class="technologyInfoBox">
+                    <span class="glyphicon glyphicon-knight"></span>
+                    <h3>前端框架</h3>
+                    <p>熟悉Jquery/Zepto，能熟练使用Bootstrap/ECharts/微信小程序原生框架，了解npm/webpack/gulp能进行日常所需的打包工作。熟悉Vue框架，了解MVVM设计模式。对模块化开发有一定认识。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section flex" id="askMyself">
+        <div class="askBox">
+            <h1 class="title">
+                <span>自我</span>告诫
+            </h1>
+            <p class="text-center askContent">人生就是一场精彩的旅程，走的最远的人往往是...</p>
+            <p class="text-center askContent hidContent">自强不息,敢于拼搏的人</p>
+        </div>
+        <div class="myShare">
+            <h1 class="title shareTitle">
+                小小分享
+            </h1>
+            <div class="container-fluid shareContent">
+                <p class="text-primary text-center">源码交流</p>
+                <p><a class="text-primary text-center"
+                        href="https://github.com/yonggeCode/myQQ-music">https://github.com/yonggeCode/myQQ-music</a></p>
+                <p><a class="text-primary text-center"
+                        href="https://github.com/yonggeCode/-Retro-Snaker">https://github.com/yonggeCode/-Retro-Snaker</a>
+                </p>
+            </div>
+            <div class="container-fluid shareContent">
+                <p class="text-primary text-center">博客交流</p>
+                <p><a class="text-primary text-center"
+                        href="https://www.cnblogs.comyongG">https://www.cnblogs.com/yongG</a></p>
+                <p class="text-primary text-center">刚开始写不久，会一直坚持下去</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p> &commat;yongGCode 2019 前端工程师
+    </footer>
+    <script src="./src/js/jquery-3.3.1.js"></script>
+    <script src="./src/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./src/js/demo.js"></script>
+    <script src="./src/js/slider.js"></script>
+</body>
+
+</html>

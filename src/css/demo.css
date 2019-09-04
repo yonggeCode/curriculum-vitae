@@ -1,0 +1,363 @@
+:root,body{
+    width: 100%;
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #ecf0f1;
+    text-decoration:none; 
+}
+a:hover{
+    color: #fd8403;
+}
+button{
+    background: transparent;
+    border: none;
+}
+
+.test{
+    width: 1000px;
+    height: 10000px;
+    /* border:1px solid black */
+}
+.my-marginTop{
+    margin-top:5rem;
+}
+.my-font{
+    color: #fff;
+}
+.my-text{
+    color: #Fff
+}
+.my-fontSize{
+    font-size: 4rem;
+}
+
+.border{
+    border:1px solid red;
+}
+.my-nav{
+    border: none;
+    background: transparent;
+    z-index: 1;
+}
+.navbar.navbar-default.my-nav .my-font{
+    font-weight: 600;
+    color: #fff;
+}    
+.navbar.navbar-default.my-nav .my-font:hover{
+    color: #F4D03F
+}
+.clickBtnShow{
+    position: fixed;
+    width: 100%;
+    top:0;
+    background: rgba(80, 80, 80,1);
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-image: url(../images/intro-bg.jpg);
+    background-size: 100% 100%;
+}
+.introInner{
+    width: 50rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.introBtn{
+    display: inline-block;
+    margin-top: 4rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-image: url(../images/down.png);
+    background-size: 100% 100%;
+    background-position: center;
+    outline: none;
+}
+.introBtn:hover{
+    animation: sacleChange 1s linear infinite;
+    box-shadow: inset 0 0 3px #fff,
+                inset 0 0 6px #fff;
+               
+    
+}
+@keyframes sacleChange{
+    0%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.1)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+.section{
+    width: 100%;
+    height: 100%;
+}
+.section.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#basicInfo{
+    overflow: hidden;
+    background: linear-gradient(to bottom, #6f7275 0%, #31353a 100%);
+}
+
+.BSInfo{
+    display: flex;
+    color: #ecf0f1;
+    
+}
+.BSInfo-left{
+    padding-left: 3rem;
+    min-width: 18rem;
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+.myBSInfo,.myIntroduce,.myCaller{
+    flex-grow: 5;
+}
+#basicInfo{
+    min-height: 560px;
+}
+.title{
+    text-align: center;
+    position: relative;
+    margin:0;
+    margin-bottom: 1.5rem;
+    color: #ecf0f1;
+    padding-top:1rem;
+}
+.title span{
+    font-size: 3rem;
+    font-weight: 300;
+}
+.title::after{
+    content: '';
+    width: 8rem;
+    height: 2px;
+    display: inline-block;
+    background: #F4D03F;
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    transform: translate(-50%)
+}
+.my-icon{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#ecf0f1;
+    color: #aaa;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.my-icon::after{
+    content: '点击切换';
+    display: inline-block;
+    position: absolute;
+    font-size: 1px;
+    left: 100%;;
+}
+
+.my-icon:hover{
+    color: #F4D03F;
+    background: #aaa;
+}
+
+.BSInfo-left .tag{
+    font-size: 1.2rem;
+    color: transparent;
+}
+.myBSInfo .myInfo h3{
+    text-align: center;
+}
+.myBSInfo .avatar{
+    display: inline-block;
+    width: 3rem;
+    height:3rem;
+    border-radius: 50%;
+}
+.myBSInfo .codeName{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'youyuan';
+    background-image:-webkit-linear-gradient(bottom,red,#fd8403,yellow); 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; 
+}
+.myBSInfo .row div{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    padding: 2rem 0;
+}
+.myIntroduce p{
+    text-indent: 2em;
+    font-size: 1.7rem;
+}
+.myIntroduce{
+    padding:2rem; 
+    height: 80vh;
+}
+.myCaller{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon-box{
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 3rem;
+}
+.GitHub{
+    background: radial-gradient(#fff 60%,#000);
+    border-radius:50%; 
+}
+.myCaller.container-fluid .row{
+    padding: 1rem;
+}
+.myCaller.container-fluid .row .col-md-6{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#experience {
+    background: #6f7275;
+    overflow: hidden;
+}
+#technology .title{
+    color: #31353a;
+}
+#technology{
+    background: #f4d03f
+}
+.technologyShow{
+    display: flex;
+    height: calc(100% - 5.8rem);
+}
+.technologyShow .technologyImg{
+    flex-grow: 1;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.technologyShow .technologyImg img{
+    display: inline-block;
+    width: 100%;
+}
+.technologyShow .technologyInfo{
+    flex-grow: 1;
+    padding: 2rem;
+    color: #31353a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.technologyShow .technologyInfo span{
+    font-size: 2rem;
+}
+.technologyShow .technologyInfo h3{
+    display: inline-block;
+    padding-left:2rem; 
+}
+.technologyShow .technologyInfo .technologyInfoBox{
+    width: 100%;
+    height: 50%;
+}
+
+#askMyself .askBox{
+    width: 100%;
+    height: 50%;
+    background-image: url(../images/my-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#askMyself .askBox .askContent{
+    font-size: 3rem;
+    color: #ecf0f1;
+    margin: 2rem 0;
+}
+#askMyself .askBox .askContent.hidContent{
+    color: transparent;
+    cursor: pointer;
+    transition: all 1.5s ease-in-out;
+}
+#askMyself .askBox .askContent.hidContent:hover{
+    color: #F4D03F
+}
+#askMyself .myShare {
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom,#eee,#aaa )
+}
+#askMyself .myShare .shareTitle{
+    color: #596275
+}
+#askMyself .myShare .shareContent{
+    font-size: 1.5rem;
+}
+#askMyself .myShare .shareContent a{
+    width: 100%;
+    display: inline-block;
+}
+.footer{
+    width: 100%;
+    height: 6rem;
+    background: #222;
+}
+.footer p{
+    display: inline-block;
+    height: 6rem;
+    line-height: 6rem;
+    color: #fff;
+    font-size: .8rem;
+}
+.showIn580{
+    display: none;
+    color: #ecf0f1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 880px){
+    #technology .technologyShow .technologyImg{
+        display: none;
+    }
+}
+@media screen and (max-width: 580px){
+    .BSInfo{
+        display: none;
+    }
+    .showIn580{
+        display: block;
+    }
+}
